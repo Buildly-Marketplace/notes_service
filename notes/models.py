@@ -25,6 +25,30 @@ class NoteProvider(models.Model):
         super(NoteType, self).save(*args, **kwargs)
 
 
+class Note(models.Model):
+    provider_id = models.UUIDField('Note Provider UUID', null=True, blank=True)
+    note_name = models.CharField('Name or Title of Note', max_length=355, blank=True)
+    note_url = models.CharField('Main URL of Note', max_length=355, blank=True)
+    note_content = models.TextField('Content of Note', null=True, blank=True)
+    note_content_summary = models.TextField('Brief Summary of Note', max_length=355, blank=True)
+    note_tags = models.CharField("Tags", max_length=355, blank=True)
+    create_date = models.DateTimeField(null=True, blank=True)
+    edit_date = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        ordering = ('note_provider_type', 'note_provider_username')
+
+    def __unicode__(self):
+        return '{}'.format(self.indicator_type) or ''
+
+    def save(self, *args, **kwargs):
+        # onsave add create date or update edit date
+        if self.create_date == None:
+            self.create_date = timezone.now()
+        self.edit_date = timezone.now()
+        super(NoteType, self).save(*args, **kwargs)
+
+
 class UserRegistration(models.Model):
     core_userid = models.UUIDField('Buildly Core User ID UUID', null=True, blank=True)
     note_provider_type = models.ForeignKey("Note Provider", null=True, on_delete=models.SET_NULL)

@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ee5bf2d-3988-48e4-85d1-852848a4ccc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evernote" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evernote_api/evernote_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keep/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/serializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evernote/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/evernote/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes_service/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes_service/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes_service/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes_service/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/base.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

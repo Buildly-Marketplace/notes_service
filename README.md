@@ -1,4 +1,17 @@
-# notes_service
+# Notes Service
+
+Simple service to allow user to register there third party note services and then search and pull notes from those 
+services into a local model for sharing.  One-way sync only for now on call.
+
+Works with Evernote and Google Keep
+
+TODO:
+<li>Finish Login</li>
+<li>Integrate search apis</li>
+<li>Write Unit Tests</li>
+<li>Add more providers </li>
+<li>A way to add developer tokens where needed without code changes (Evernote)</li>
+<li>Universal search interface </li>
 
 ## Development
 

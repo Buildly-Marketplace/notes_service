@@ -16,8 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path, include, re_path
-from rest_framework import permissions
-
+from rest_framework import permissions, routers
+from notes import views
 
 # openapi implementation
 from drf_yasg.views import get_schema_view
@@ -35,6 +35,11 @@ schema_view = get_schema_view(
     permission_classes=(permissions.AllowAny,),
 )              
 
+router = routers.SimpleRouter()
+
+router.register(r'noteprovider', views.NoteProviderViewSet)
+router.register(r'notes', views.NoteViewSet)
+router.register(r'userregistration', views.UserRegistrationViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
